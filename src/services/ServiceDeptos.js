@@ -39,4 +39,14 @@ export default class ServiceDeptos {
 
         })
     }
+
+    updateDepto(depto){
+        return new Promise(function(resolve){
+            var request = "api/departamentos";
+            var url = Global.urlApiDeptos + request;
+            axios.put(url, depto).then(response => {
+                resolve(response);
+            })
+        })
+    }
 }

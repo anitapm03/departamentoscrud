@@ -34,13 +34,16 @@ export default {
     },
     methods:{
         updateDepartamento(){
+            service.updateDepto(this.depto).then(result => {
+                console.log(result);
 
+            })
         }
     },
     mounted() {
         service.getDeptoId(this.$route.params.id).then(result =>{
             this.depto = result;
-
+            this.$router.push("/departamentos");
         })
     }
 
