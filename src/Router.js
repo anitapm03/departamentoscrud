@@ -4,6 +4,7 @@ import DepartamentosComponent from './components/DepartamentosComponent.vue'
 import CreateDepartamento from './components/CreateDepartamento.vue'
 import DetalleDepartamento from './components/DetalleDepartamento.vue'
 import UpdateDepartamento from './components/UpdateDepartamento.vue'
+import DeleteDepartamento from './components/DeleteDepartamento.vue'
 
 const myRoutes = [
     {
@@ -20,6 +21,9 @@ const myRoutes = [
     },
     {
         path: "/update/:id", component: UpdateDepartamento
+    },
+    {
+        path: "/delete/:id", component: DeleteDepartamento
     }
 ]
 

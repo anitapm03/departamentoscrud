@@ -35,7 +35,7 @@ const service = new ServiceDeptos();
             insertDepartamento(){
                 service.insertDepartamento(this.depto).then(result => {
                     console.log(result);
-                    this.$router.push("/");
+                    this.$router.push("/departamentos");
                 })
             }
         }

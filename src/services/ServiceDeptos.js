@@ -49,4 +49,15 @@ export default class ServiceDeptos {
             })
         })
     }
+
+    deleteDepto(id){
+        return new Promise(function(resolve){
+            var request = "api/departamentos/" +id;
+            var url = Global.urlApiDeptos +request;
+
+            axios.delete(url).then(response => {
+                resolve(response);
+            })
+        })
+    }
 }

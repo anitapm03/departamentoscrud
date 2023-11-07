@@ -29,6 +29,12 @@
                         Update
                         </router-link>
                     </td>
+                    <td>
+                        <router-link class="btn btn-danger"
+                        :to="'/delete/'+dep.idDepartamento">
+                        Delete
+                        </router-link>
+                    </td>
                 </tr>
             </tbody>
         </table>
